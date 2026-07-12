@@ -202,10 +202,10 @@ export default function Services() {
                     alt=""
                     fill
                     sizes="(min-width: 1024px) 28vw, (min-width: 640px) 46vw, 92vw"
-                    className="object-cover opacity-38 brightness-[0.58] saturate-[0.9] transition-all duration-[1400ms] ease-out group-hover:scale-[1.075] group-hover:opacity-58 group-hover:brightness-[0.86] group-hover:saturate-100"
+                    className="object-cover opacity-58 brightness-[0.78] saturate-100 transition-all duration-[1400ms] ease-out group-hover:scale-[1.075] group-hover:opacity-70 group-hover:brightness-[0.96]"
                   />
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_24%,rgba(0,0,0,0.72)_100%)] transition-opacity duration-700 group-hover:opacity-78" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-black/78 via-black/58 to-[#100b05]/66 transition-opacity duration-700 group-hover:opacity-62" />
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_24%,rgba(0,0,0,0.62)_100%)] transition-opacity duration-700 group-hover:opacity-72" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/66 via-black/48 to-[#100b05]/58 transition-opacity duration-700 group-hover:opacity-56" />
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(214,180,103,0.14),transparent_32%)] opacity-60 transition-opacity duration-700 group-hover:opacity-100" />
                   <motion.div
                     aria-hidden="true"

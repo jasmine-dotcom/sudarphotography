@@ -91,9 +91,9 @@ export default function About() {
         aria-hidden="true"
         className="absolute inset-0 bg-[radial-gradient(circle_at_25%_45%,rgba(214,180,103,0.09),transparent_32%),radial-gradient(circle_at_72%_38%,rgba(255,255,255,0.035),transparent_30%)]"
       />
-      <div className="section-shell relative grid gap-10 md:grid-cols-[0.48fr_0.52fr] md:items-center md:gap-12 xl:gap-16">
+      <div className="section-shell relative grid gap-10 md:grid-cols-[0.48fr_0.52fr] md:items-stretch md:gap-12 xl:gap-16">
         <motion.div
-          className="relative aspect-[9/16] w-full overflow-hidden rounded-lg border border-[#d6b467]/75 bg-black shadow-[0_28px_90px_rgba(0,0,0,0.46)]"
+          className="relative aspect-[9/16] w-full overflow-hidden rounded-lg border border-[#d6b467]/75 bg-black shadow-[0_28px_90px_rgba(0,0,0,0.46)] md:aspect-auto md:h-full md:min-h-[560px] xl:min-h-[640px]"
           initial={reduceMotion ? false : { opacity: 0, scale: 0.97, y: 22 }}
           whileInView={reduceMotion ? undefined : { opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true, amount: 0.22 }}
@@ -127,6 +127,7 @@ export default function About() {
         </motion.div>
 
         <motion.div
+          className="md:flex md:flex-col md:justify-center"
           initial={reduceMotion ? false : { opacity: 0, y: 24 }}
           whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.28 }}

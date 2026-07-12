@@ -51,8 +51,11 @@ export default function Navbar() {
     const section = document.getElementById(id);
     if (!section) return;
     event.preventDefault();
+    setActiveSection(id);
     setIsOpen(false);
-    section.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    const headerOffset = window.innerWidth >= 1024 ? 104 : 96;
+    const top = section.getBoundingClientRect().top + window.scrollY - headerOffset;
+    window.scrollTo({ top, behavior: reduceMotion ? "auto" : "smooth" });
     window.history.replaceState(null, "", `#${id}`);
   };
 

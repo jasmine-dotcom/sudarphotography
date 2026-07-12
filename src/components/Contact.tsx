@@ -1,8 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FormEvent } from "react";
+
+const businessPhone = "919597345529";
 
 export default function Contact() {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const session = String(formData.get("session") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    const enquiry = [
+      "Hi Sudar Photography, I would like to send an enquiry.",
+      name ? `Name: ${name}` : "",
+      email ? `Email: ${email}` : "",
+      session ? `Session Type: ${session}` : "",
+      message ? `Message: ${message}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    window.open(
+      `https://wa.me/${businessPhone}?text=${encodeURIComponent(enquiry)}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
   return (
     <motion.section
       id="contact"
@@ -23,7 +52,10 @@ export default function Contact() {
           </p>
         </div>
 
-        <form className="grid gap-6 border border-[#d6b467]/18 bg-black/35 p-6 shadow-[0_28px_90px_rgba(0,0,0,0.38)] sm:p-8 lg:border-y lg:border-r lg:border-l-[#d6b467]/24 lg:p-10">
+        <form
+          onSubmit={handleSubmit}
+          className="grid gap-6 border border-[#d6b467]/18 bg-black/35 p-6 shadow-[0_28px_90px_rgba(0,0,0,0.38)] sm:p-8 lg:border-y lg:border-r lg:border-l-[#d6b467]/24 lg:p-10"
+        >
           <div className="grid gap-5 sm:grid-cols-2">
             <label className="grid gap-2 text-xs uppercase tracking-[0.2em] text-white/52">
               Name
