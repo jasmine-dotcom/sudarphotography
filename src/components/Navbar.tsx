@@ -1,9 +1,16 @@
 "use client";
 
+import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { MouseEvent, useEffect, useState } from "react";
 
-const navItems = ["Home", "Portfolio", "Services", "About", "Contact"];
+const navItems = [
+  { label: "Home", id: "home" },
+  { label: "Packages", id: "portfolio" },
+  { label: "Services", id: "services" },
+  { label: "About", id: "about" },
+  { label: "Contact", id: "contact" },
+];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,7 +27,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const sections = navItems
-      .map((item) => document.getElementById(item.toLowerCase()))
+      .map((item) => document.getElementById(item.id))
       .filter((section): section is HTMLElement => Boolean(section));
 
     const observer = new IntersectionObserver(
@@ -57,32 +64,38 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="section-shell flex h-20 items-center justify-between">
-        <a href="#home" onClick={(event) => handleNavClick(event, "home")} className="group flex flex-col leading-none">
-          <span className="text-lg font-semibold tracking-[0.22em] text-white">
-            SUDAR
-          </span>
-          <span className="mt-1 text-[10px] uppercase tracking-[0.38em] text-[#d6b467] transition-colors group-hover:text-[#f2dc9b]">
-            Photography
-          </span>
+      <nav className="section-shell flex h-24 items-center justify-between lg:h-[104px]">
+        <a
+          href="#home"
+          onClick={(event) => handleNavClick(event, "home")}
+          className="group flex h-20 w-[150px] items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:w-[170px]"
+          aria-label="Sudar Photography home"
+        >
+          <Image
+            src="/images/logo/sudar-photography-logo.jpeg"
+            alt="Sudar Photography logo"
+            width={360}
+            height={164}
+            priority
+            className="h-auto w-full object-contain [filter:invert(1)_grayscale(1)_contrast(1.3)] transition-opacity group-hover:opacity-90"
+          />
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-8 md:flex lg:gap-10">
           {navItems.map((item) => {
-            const id = item.toLowerCase();
-            const isActive = activeSection === id;
+            const isActive = activeSection === item.id;
 
             return (
               <a
-                key={item}
-                href={`#${id}`}
-                onClick={(event) => handleNavClick(event, id)}
+                key={item.id}
+                href={`#${item.id}`}
+                onClick={(event) => handleNavClick(event, item.id)}
                 aria-current={isActive ? "page" : undefined}
-                className={`relative text-sm uppercase tracking-[0.22em] transition-colors hover:text-[#f2dc9b] focus:outline-none focus:text-[#f2dc9b] ${
+                className={`relative text-sm uppercase tracking-[0.24em] transition-colors hover:text-[#f2dc9b] focus:outline-none focus:text-[#f2dc9b] ${
                   isActive ? "text-[#f2dc9b]" : "text-white/68"
                 }`}
               >
-                {item}
+                {item.label}
                 <span
                   className={`absolute -bottom-2 left-0 h-px bg-[#d6b467] transition-all duration-300 ${
                     isActive ? "w-full opacity-100" : "w-0 opacity-0"
@@ -130,20 +143,19 @@ export default function Navbar() {
           >
             <div className="section-shell flex flex-col py-5">
               {navItems.map((item) => {
-                const id = item.toLowerCase();
-                const isActive = activeSection === id;
+                const isActive = activeSection === item.id;
 
                 return (
                   <a
-                    key={item}
-                    href={`#${id}`}
-                    onClick={(event) => handleNavClick(event, id)}
+                    key={item.id}
+                    href={`#${item.id}`}
+                    onClick={(event) => handleNavClick(event, item.id)}
                     aria-current={isActive ? "page" : undefined}
                     className={`border-b border-white/8 py-4 text-sm uppercase tracking-[0.24em] last:border-b-0 ${
                       isActive ? "text-[#f2dc9b]" : "text-white/78"
                     }`}
                   >
-                    {item}
+                    {item.label}
                   </a>
                 );
               })}

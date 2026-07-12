@@ -79,7 +79,7 @@ export default function Hero() {
               href="#portfolio"
               className="inline-flex min-h-12 items-center justify-center border border-[#d6b467] bg-[#d6b467] px-7 text-sm font-semibold uppercase tracking-[0.22em] text-black transition-all hover:bg-[#f2dc9b] hover:shadow-[0_0_34px_rgba(214,180,103,0.28)] focus:outline-none focus:ring-2 focus:ring-[#f2dc9b] focus:ring-offset-2 focus:ring-offset-black"
             >
-              View Portfolio
+              View Packages
             </a>
             <a
               href="#contact"

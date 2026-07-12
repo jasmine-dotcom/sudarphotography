@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { motion } from "framer-motion";
 
@@ -10,21 +10,20 @@ export default function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.18 }}
       transition={{ duration: 0.75, ease: "easeOut" }}
-      className="bg-black py-24 sm:py-32"
+      className="border-y border-[#d6b467]/18 bg-black py-24 sm:py-32"
     >
-      <div className="section-shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-        <div>
-          <p className="text-xs uppercase tracking-[0.42em] text-[#d6b467]">Contact</p>
-          <h2 className="mt-5 text-4xl font-semibold leading-tight text-white sm:text-5xl">
+      <div className="section-shell grid gap-12 lg:grid-cols-[0.74fr_1fr] lg:items-start lg:gap-0">
+        <div className="lg:pr-16">
+          <h2 className="max-w-xl text-4xl font-semibold leading-[1.16] text-white sm:text-5xl lg:text-[4rem] lg:leading-[1.12]">
             Book a session with a cinematic eye.
           </h2>
-          <p className="mt-6 text-base leading-8 text-white/60">
+          <p className="mt-8 max-w-xl text-base leading-8 text-white/66 sm:text-lg">
             Share the date, location, and mood of your story. Sudar Photography will shape the
             visual direction from there.
           </p>
         </div>
 
-        <form className="premium-border grid gap-5 bg-white/[0.035] p-6 sm:p-8">
+        <form className="grid gap-6 border border-[#d6b467]/18 bg-black/35 p-6 shadow-[0_28px_90px_rgba(0,0,0,0.38)] sm:p-8 lg:border-y lg:border-r lg:border-l-[#d6b467]/24 lg:p-10">
           <div className="grid gap-5 sm:grid-cols-2">
             <label className="grid gap-2 text-xs uppercase tracking-[0.2em] text-white/52">
               Name
@@ -64,7 +63,7 @@ export default function Contact() {
           </label>
           <button
             type="submit"
-            className="min-h-12 border border-[#d6b467] bg-[#d6b467] px-7 text-sm font-semibold uppercase tracking-[0.22em] text-black transition-all hover:bg-[#f2dc9b]"
+            className="min-h-14 border border-[#d6b467] bg-[#d6b467] px-7 text-sm font-semibold uppercase tracking-[0.34em] text-black transition-all hover:bg-[#f2dc9b]"
           >
             Send Inquiry
           </button>
