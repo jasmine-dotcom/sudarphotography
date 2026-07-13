@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { MouseEvent } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
@@ -127,15 +128,16 @@ export default function Footer() {
             <a
               href="#home"
               onClick={(event) => handleLinkClick(event, "home")}
-              className="inline-flex flex-col leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className="inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               aria-label="Sundar Photography home"
             >
-              <span className="font-serif text-4xl font-semibold italic tracking-[0.02em] text-white">
-                Sundar
-              </span>
-              <span className="mt-1 text-[10px] uppercase tracking-[0.42em] text-[#d6b467]">
-                Photography
-              </span>
+              <Image
+                src="/images/logo/sundar-photography-team-logo.png"
+                alt="Sundar Photography logo"
+                width={205}
+                height={94}
+                className="h-20 w-auto object-contain invert"
+              />
             </a>
             <p className="mt-5 text-base font-semibold leading-7 text-white">
               Capturing Moments.
