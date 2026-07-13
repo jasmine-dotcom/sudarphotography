@@ -198,7 +198,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center justify-center gap-4 md:justify-end">
               <a
-                href="https://www.instagram.com/framesbysundar/"
+                href="https://www.instagram.com/sundar_photographymadurai?igsh=OGxpY3Nld2hiOGpz"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 text-[#d6b467] transition-colors hover:text-[#f2dc9b] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
