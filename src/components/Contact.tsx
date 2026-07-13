@@ -16,7 +16,7 @@ export default function Contact() {
     const message = String(formData.get("message") || "").trim();
 
     const enquiry = [
-      "Hi Sundar Photography, I would like to send an enquiry.",
+      "Hi Sundar Photography & Team, I would like to send an enquiry.",
       name ? `Name: ${name}` : "",
       email ? `Email: ${email}` : "",
       session ? `Session Type: ${session}` : "",
@@ -47,7 +47,7 @@ export default function Contact() {
             Book a session with a cinematic eye.
           </h2>
           <p className="mt-8 max-w-xl text-base leading-8 text-white/66 sm:text-lg">
-            Share the date, location, and mood of your story. Sundar Photography will shape the
+            Share the date, location, and mood of your story. Sundar Photography & Team will shape the
             visual direction from there.
           </p>
         </div>

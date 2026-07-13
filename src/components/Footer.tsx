@@ -129,11 +129,11 @@ export default function Footer() {
               href="#home"
               onClick={(event) => handleLinkClick(event, "home")}
               className="inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              aria-label="Sundar Photography home"
+              aria-label="Sundar Photography & Team home"
             >
               <Image
                 src="/images/logo/sundar-photography-team-logo.png"
-                alt="Sundar Photography logo"
+                alt="Sundar Photography & Team logo"
                 width={205}
                 height={94}
                 className="h-20 w-auto object-contain invert"
@@ -189,7 +189,7 @@ export default function Footer() {
 
         <div className="mt-10 border-t border-[#d6b467]/24 pt-6">
           <div className="grid gap-4 text-center text-xs uppercase tracking-[0.16em] text-white/48 md:grid-cols-3 md:items-center">
-            <p className="md:text-left">&copy; 2026 Sundar Photography</p>
+            <p className="md:text-left">&copy; 2026 Sundar Photography & Team</p>
             <p>
               Designed & Developed with{" "}
               <span aria-label="love" role="img">

@@ -57,7 +57,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.22, ease: "easeOut" }}
             className="mt-5 text-sm uppercase tracking-[0.62em] text-white/72 sm:text-base"
           >
-            PHOTOGRAPHY
+            PHOTOGRAPHY & TEAM
           </motion.p>
 
           <motion.p

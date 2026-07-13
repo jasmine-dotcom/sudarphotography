@@ -72,11 +72,11 @@ export default function Navbar() {
           href="#home"
           onClick={(event) => handleNavClick(event, "home")}
           className="group flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-          aria-label="Sundar Photography home"
+          aria-label="Sundar Photography & Team home"
         >
           <Image
             src="/images/logo/sundar-photography-team-logo.png"
-            alt="Sundar Photography logo"
+            alt="Sundar Photography & Team logo"
             width={220}
             height={100}
             priority

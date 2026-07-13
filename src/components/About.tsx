@@ -106,7 +106,7 @@ export default function About() {
           >
             <Image
               src="/images/about-telephone-booth-portrait.png"
-              alt="Sundar Photography telephone booth portrait"
+              alt="Sundar Photography & Team telephone booth portrait"
               fill
               sizes="(min-width: 1280px) 40vw, (min-width: 768px) 42vw, 92vw"
               className="object-cover object-[42%_center]"
@@ -116,7 +116,7 @@ export default function About() {
           <div className="absolute inset-x-0 bottom-0 h-[46%] bg-gradient-to-t from-black/88 via-black/42 to-transparent" />
           <div className="absolute bottom-7 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8">
             <p className="mb-4 text-[10px] uppercase tracking-[0.34em] text-[#d6b467] sm:text-xs">
-              Sundar Photography
+              Sundar Photography & Team
             </p>
             <p className="text-3xl font-semibold leading-[1.05] text-white sm:text-4xl md:text-3xl xl:text-[2.6rem]">
               Real emotions.
@@ -139,7 +139,7 @@ export default function About() {
           </h2>
           <div className="mt-8 grid max-w-[640px] gap-6 text-base leading-8 text-white/70 lg:text-lg lg:leading-9">
             <p>
-              Sundar Photography captures weddings, engagements, portraits, and celebrations with a
+              Sundar Photography & Team captures weddings, engagements, portraits, and celebrations with a
               natural, cinematic approach. Every frame is thoughtfully composed to preserve genuine
               emotions, meaningful traditions, and the moments families will revisit for years.
             </p>
@@ -181,7 +181,7 @@ export default function About() {
               onClick={() => scrollToSection("contact")}
               className="inline-flex min-h-14 items-center whitespace-nowrap text-left text-sm font-semibold uppercase tracking-[0.16em] text-[#d6b467] transition-colors hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d6b467] focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:tracking-[0.18em]"
             >
-              Contact Sundar Photography <span aria-hidden="true">-&gt;</span>
+              Contact Sundar Photography & Team <span aria-hidden="true">-&gt;</span>
             </button>
           </div>
         </motion.div>

@@ -11,7 +11,7 @@ const packagePosters = [
     title: "Platinum Package",
     price: "Starting from Rs. 1,00,000",
     src: "/images/packages/platinum-package.jpeg",
-    alt: "Sundar Photography Platinum Package wedding and engagement poster",
+    alt: "Sundar Photography & Team Platinum Package wedding and engagement poster",
     summary:
       "A complete premium wedding and engagement story with photography, videography, creative shoots, aerial visuals, and keepsake deliverables.",
     coverage: [
@@ -29,7 +29,7 @@ const packagePosters = [
     title: "Diamond Package",
     price: "Starting from Rs. 55,000",
     src: "/images/packages/diamond-package.jpeg",
-    alt: "Sundar Photography Diamond Package two-day wedding coverage poster",
+    alt: "Sundar Photography & Team Diamond Package two-day wedding coverage poster",
     summary:
       "A polished two-day package for engagement and wedding coverage with creative portraits, candid moments, and refined printed keepsakes.",
     coverage: [
@@ -47,7 +47,7 @@ const packagePosters = [
     title: "Gold Package",
     price: "Starting from Rs. 35,000",
     src: "/images/packages/gold-package.jpeg",
-    alt: "Sundar Photography Gold Package wedding coverage poster",
+    alt: "Sundar Photography & Team Gold Package wedding coverage poster",
     summary:
       "A balanced engagement and wedding-day photography package with essential coverage, creative couple portraits, and album delivery.",
     coverage: [
@@ -64,7 +64,7 @@ const packagePosters = [
     title: "Silver Package",
     price: "Starting from Rs. 25,000",
     src: "/images/packages/silver-package.jpeg",
-    alt: "Sundar Photography Silver Package two days complete coverage poster",
+    alt: "Sundar Photography & Team Silver Package two days complete coverage poster",
     summary:
       "An elegant two-day essentials package for engagement and wedding functions with couple coverage and core printed deliverables.",
     coverage: [
@@ -128,7 +128,7 @@ export default function Portfolio() {
 
   const handleWhatsApp = (packageName: string) => {
     const message = encodeURIComponent(
-      `Hi Sundar Photography, I would like to enquire about the ${packageName}. Please share more details.`,
+      `Hi Sundar Photography & Team, I would like to enquire about the ${packageName}. Please share more details.`,
     );
     window.open(`https://wa.me/${businessPhone}?text=${message}`, "_blank", "noopener,noreferrer");
   };
@@ -147,10 +147,10 @@ export default function Portfolio() {
           <div className="mb-12 max-w-3xl">
             <p className="text-xs uppercase tracking-[0.42em] text-[#d6b467]">PACKAGES</p>
             <h2 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">
-              Photography Packages
+              Photography & Team Packages
             </h2>
             <p className="mt-5 text-sm leading-7 text-white/62 sm:text-base">
-              Choose from four curated Sundar Photography wedding packages, each presented with the
+              Choose from four curated Sundar Photography & Team wedding packages, each presented with the
               uploaded package poster for quick review.
             </p>
           </div>
@@ -257,7 +257,7 @@ export default function Portfolio() {
 
                 <div className="relative p-5 sm:p-8 lg:p-10">
                   <p className="text-[0.65rem] font-semibold uppercase tracking-[0.34em] text-[#d6b467]">
-                    Sundar Photography
+                    Sundar Photography & Team
                   </p>
                   <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                     <div>
