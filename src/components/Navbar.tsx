@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { MouseEvent, useEffect, useState } from "react";
 
@@ -71,17 +70,15 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={(event) => handleNavClick(event, "home")}
-          className="group flex h-20 w-[150px] items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:w-[170px]"
-          aria-label="Sudar Photography home"
+          className="group flex flex-col leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+          aria-label="Sundar Photography home"
         >
-          <Image
-            src="/images/logo/sudar-photography-logo.jpeg"
-            alt="Sudar Photography logo"
-            width={360}
-            height={164}
-            priority
-            className="h-auto w-full object-contain [filter:invert(1)_grayscale(1)_contrast(1.3)] transition-opacity group-hover:opacity-90"
-          />
+          <span className="font-serif text-3xl font-semibold italic tracking-[0.02em] text-white transition-colors group-hover:text-[#f2dc9b] sm:text-4xl">
+            Sundar
+          </span>
+          <span className="mt-1 text-[10px] uppercase tracking-[0.42em] text-[#d6b467]">
+            Photography
+          </span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex lg:gap-10">

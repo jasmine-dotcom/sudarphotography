@@ -48,7 +48,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.08, ease: "easeOut" }}
             className="text-6xl font-black leading-[0.86] tracking-[0.02em] text-white sm:text-7xl md:text-8xl lg:text-9xl"
           >
-            SUDAR
+            SUNDAR
           </motion.h1>
 
           <motion.p
