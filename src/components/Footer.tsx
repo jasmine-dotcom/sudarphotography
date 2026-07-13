@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const links = [
   { label: "Home", id: "home" },
   { label: "Packages", id: "portfolio" },
@@ -15,16 +13,15 @@ export default function Footer() {
         <div>
           <a
             href="#home"
-            className="inline-flex w-[154px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            aria-label="Sudar Photography home"
+            className="inline-flex flex-col leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            aria-label="Sundar Photography home"
           >
-            <Image
-              src="/images/logo/sudar-photography-logo.jpeg"
-              alt="Sudar Photography logo"
-              width={320}
-              height={146}
-              className="h-auto w-full object-contain [filter:invert(1)_grayscale(1)_contrast(1.3)]"
-            />
+            <span className="font-serif text-3xl font-semibold italic tracking-[0.02em] text-white">
+              Sundar
+            </span>
+            <span className="mt-1 text-[10px] uppercase tracking-[0.42em] text-[#d6b467]">
+              Photography
+            </span>
           </a>
         </div>
         <div className="flex flex-wrap gap-x-8 gap-y-4 md:justify-center">
@@ -60,12 +57,26 @@ export default function Footer() {
             Uthangudi Post
             <br />
             Madurai - 625 023
+            <br />
+            <a
+              href="mailto:framesbysundar@gmail.com"
+              className="mt-2 inline-block font-semibold text-[#d6b467] transition-colors hover:text-[#f2dc9b] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              framesbysundar@gmail.com
+            </a>
+            <br />
+            <a
+              href="tel:+919597345529"
+              className="inline-block font-semibold text-[#d6b467] transition-colors hover:text-[#f2dc9b] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2dc9b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              9597345529
+            </a>
           </address>
         </div>
         <p className="text-xs uppercase leading-7 tracking-[0.16em] text-white/48 md:text-right">
           &copy; 2026
           <br />
-          Sudar Photography
+          Sundar Photography
         </p>
       </div>
     </footer>
